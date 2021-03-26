@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-from flask import Flask, Blueprint
+from flask import Flask
 
 
 def create_app():

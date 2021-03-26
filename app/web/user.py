@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-
-from flask import Blueprint, jsonify
-
-user = Blueprint("user", __name__)
-
+from flask import jsonify
+from . import user
 
 @user.route("/user/login")
 def user_login():
