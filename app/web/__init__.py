@@ -3,5 +3,5 @@
 
 from flask import Blueprint
 
-home = Blueprint("home", __name__)
-user = Blueprint("user", __name__)
+web_home = Blueprint("web_home", __name__)
+web_user = Blueprint("web_user", __name__)

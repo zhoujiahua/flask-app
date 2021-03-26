@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-from . import home
+from . import web_home
 
-@home.route("/")
-def home_page():
+@web_home.route("/")
+def web_home_page():
     return "Hi home page"

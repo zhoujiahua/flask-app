@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 from flask import jsonify
-from . import user
+from . import web_user
 
-@user.route("/user/login")
-def user_login():
+@web_user.route("/user/login")
+def web_user_login():
     return jsonify({"name": "jerry"})

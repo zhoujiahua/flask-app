@@ -12,8 +12,18 @@ def create_app():
 
 
 def register_blueprint(app):
-    from app.web.user import user
-    from app.web.home import home
+    # Web register
+    from app.web.user import web_user
+    from app.web.home import web_home
+    app.register_blueprint(web_user)
+    app.register_blueprint(web_home)
 
-    app.register_blueprint(user)
-    app.register_blueprint(home)
+    # Api register
+    from app.api.user import api_user
+    from app.api.comm import api_comm
+    app.register_blueprint(api_user)
+    app.register_blueprint(api_comm)
+
+    
+
+    
