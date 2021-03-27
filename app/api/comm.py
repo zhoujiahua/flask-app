@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
-from flask import request, jsonify
+from flask import request, jsonify, current_app
 from . import api_comm
 from app.forms.search import SearchForm
 

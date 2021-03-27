@@ -8,6 +8,8 @@ flask = "*"
 requests = "*"
 flask-cors = "*"
 wtforms = "*"
+flask-sqlalchemy = "*"
+cymysql = "*"
 
 [dev-packages]
 autopep8 = "*"
