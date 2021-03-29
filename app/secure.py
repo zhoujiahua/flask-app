@@ -2,3 +2,4 @@
 # -*- coding: UTF-8 -*-
 
 SQLALCHEMY_DATABASE_URI = 'mysql+cymysql://topy:123456@10.150.253.30:3306/topy'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
