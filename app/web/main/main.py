@@ -2,9 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 from flask import render_template
-from . import web_home
+from . import web_main
 
 
-@web_home.route("/")
-def web_home_page():
+@web_main.route('/')
+def main_index():
     return render_template('index.html')

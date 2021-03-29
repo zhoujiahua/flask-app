@@ -7,7 +7,7 @@ from app.models.user import db
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder='static', template_folder='templates')
     CORS(app, supports_credentials=True)
     app.config.from_object('app.secure')
     app.config.from_object('app.setting')
@@ -25,11 +25,13 @@ def create_app():
 
 
 def register_blueprint(app):
-    # Web register
-    from app.web.user import web_user
-    from app.web.home import web_home
-    app.register_blueprint(web_user)
-    app.register_blueprint(web_home)
+    # Web Main view
+    from app.web.main.main import web_main
+    app.register_blueprint(web_main)
+
+    # Web Admin view
+    from app.web.admin.admin import web_admin
+    app.register_blueprint(web_admin)
 
     # Api register
     from app.api.user import api_user
