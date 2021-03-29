@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-from sqlalchemy import Column, Integer, String
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import Column, Integer, String
 
 # Sqlalchemy
 # Flask SQLalchemy
