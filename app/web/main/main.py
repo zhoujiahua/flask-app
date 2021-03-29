@@ -7,4 +7,4 @@ from . import web_main
 
 @web_main.route('/')
 def main_index():
-    return render_template('index.html')
+    return render_template('main/index.html')
